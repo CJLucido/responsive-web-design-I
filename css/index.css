@@ -10,9 +10,7 @@
 	font: inherit;
     vertical-align: baseline;
 }
-.container{
 
-}
 
 body {
 	line-height: 1;
@@ -168,7 +166,7 @@ nav a{
 	margin: 5px 0 0 0;
 }
 
-footer{
+footer p{
 	display: flex;
 	justify-content: center;
 }
@@ -263,4 +261,63 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    body{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    html{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    header{
+        flex-wrap:wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 3% 0;
+        width: 100%;
+    }
+    
+    .logo {
+        padding: 5% 0;
+        justify-content: center;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+       align-items:center;
+    }
+
+    .cta-text h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .bottom-content{
+ 
+        border-bottom: 2px solid grey;
+    }
+
+}/****TABLET VIEW**/
+
+@media screen and (max-width: 500px){
+
+
+}/****PHONE VIEW**/
